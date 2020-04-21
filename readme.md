@@ -19,7 +19,7 @@ Watch the below clip to see basic functionality of app.
 
 # Requests
 - What type of requests will you use to create a new user and restaurant?
-- What about seeing all users/restaurants and seeing individual users/restaurants
+- What about seeing all users/restaurants and seeing individual users/restaurants?
 - In notes.md, write each type of request, the controller it hits, and action that deals with the request
 
 When you've successfully built out an app that allows you to add a restaurant manually, add the Yelp API feature. We've included the Yelp gem. You'll need to login to get unique tokens at https://www.yelp.com/developers/documentation/v3
