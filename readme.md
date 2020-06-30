@@ -31,4 +31,3 @@ Using the adapter pattern, allow your users to hit the API and get restaurant ob
 To use the API, you'll need an api key from Yelp. Follow the instructions provided by Yelp and place your api key in a file named `config/api_key.rb` as the variable `API_KEY`. Do not commit this file!
 
 To make requests with the api, follow the instructions provided by the gem project [here](https://github.com/erikgrueter1/yelp-fusion)
-
