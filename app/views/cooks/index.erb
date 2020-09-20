@@ -1,0 +1,22 @@
+
+<center> <h1>Our Cooks:</h1>
+<br>
+<hr>
+<h2>
+    <%@cooks.each do |cook|%>
+        <hr>
+        <li>
+
+        <a href="/cooks/<%=cook.id%>"><%=cook.name%></a>
+        </li>
+        <hr>
+    <%end%>
+    </h2>
+<footer>
+<hr>
+<h3><a href ="/cooks">See our Cooks</a> | <a href ="/dishes">See our Food</a> | <a href ="/expos">See our Chefs</a> | <a href ="/cooks/new">Come Work For Us</a></h3>
+<hr>
+</footer>
+</center>
+    
+

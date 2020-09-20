@@ -1,0 +1,10 @@
+<h1>Congratulations!</h1>
+<form action="/expos" method="POST">
+    <br/>
+    <label for="description">Describe Yourself:</label>
+    <br>
+        <input type="text" name="description" id="name"> 
+    <br/>
+    <input type="hidden" value="<%=@cook.id%>" name="id">
+    <input type="submit" value="Accept Promotion!">
+</form>

@@ -1,0 +1,25 @@
+<center>
+<h1><%=@cook.name%>'s Page</h1>
+<hr>
+<br>
+<br>
+<h2>
+Dishes:
+<br>
+<%@cook.dishes.each do |dish|%>
+<li>
+<a href="/dishes/<%=dish.id%>"><%=dish.name%></a>
+</li>
+<%end%>
+</h2>
+<hr>
+<li>
+<a href="/expos/new/<%=@cook.id%>">Promotion Time</a>
+</li>
+
+<footer>
+<hr>
+<h3><a href ="/cooks">See our Cooks</a> | <a href ="/dishes">See our Food</a> | <a href ="/expos">See our Chefs</a> | <a href ="/cooks/new">Come Work For Us</a></h3>
+<hr>
+</footer>
+</center>

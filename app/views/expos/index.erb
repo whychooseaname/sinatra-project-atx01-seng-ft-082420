@@ -1,0 +1,18 @@
+<h1>Get to Know our Chefs!</h1>
+<center><h1><%=@expos.name%></h1>
+<hr>
+<h2>
+
+<%@expos.each do |expo|%>
+<li>
+    <a href="/expos/<%=expo.id%>"><%=expo.name%></a><br>
+</li>
+<%end%>
+ <hr>
+ </h2>
+ <br>
+
+<footer>
+<h3><a href ="/cooks">See our Cooks</a> | <a href ="/dishes">See our Food</a> | <a href ="/expos">See our Chefs</a> | <a href ="/cooks/new">Come Work For Us</a></h3>
+</footer>
+</center>

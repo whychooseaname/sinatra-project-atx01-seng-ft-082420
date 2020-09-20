@@ -1,0 +1,37 @@
+Dish Edit Page
+
+<form action="/dishes/<%=@dish.id%>" method="POST">
+<input type="hidden" name="_method" value="patch" />
+    <label>Enter a new name for <%=@dish.name%>:</label>
+    <br/>
+         <label for="name">New Name:</label>
+        <input type="text" name="dish[name]" id="name" value="<%=@dish.name%>">
+    <br/>
+    <label>Select a Cook:</label>
+    <br/>
+        <select  name="dish[cook_id]">
+            <% @cooks.each do |cook| %>
+                <option value="<%=cook.id%>"><%=cook.name%></option> 
+            <% end %>
+        </select>
+    <br/>
+    <label>Select an Expediter:</label>
+    <br/>
+        <select name="dish[expo_id]">
+            <% @expos.each do |expo| %>
+                <option value="<%= expo.id%>"><%=expo.name%></option> 
+            <% end %>
+        </select>
+    <br>
+    
+    <input type="submit" value="Edit">
+</form>
+
+
+<center>
+<footer>
+<hr>
+<h3><a href ="/cooks">See our Cooks</a> | <a href ="/dishes">See our Food</a> | <a href ="/expos">See our Chefs</a> | <a href ="/cooks/new">Come Work For Us</a></h3>
+<hr>
+</footer>
+</center>

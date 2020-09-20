@@ -1,0 +1,44 @@
+<center> <h1>Our Dishes:</h1>
+<br>
+<hr>
+<br>
+<h2>
+    <%@dishes.each do |dish|%>
+        <li>
+        <a href="/dishes/<%=dish.id%>"><%=dish.name%></a>
+        </li>
+    <%end%>
+</h2>
+<br>
+<br>
+<br>
+<a href = "/dishes/new">Create a dish</a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+<hr>
+<h3><a href ="/cooks">See our Cooks</a> | <a href ="/dishes">See our Food</a> | <a href ="/expos">See our Chefs</a> | <a href ="/cooks/new">Come Work For Us</a></h3>
+<hr>
+</footer>
+</center>

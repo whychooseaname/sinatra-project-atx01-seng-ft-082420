@@ -1,0 +1,36 @@
+<h1>New Dish</h1>
+    <br/>
+<form action="/dishes" method="POST">
+    
+    <br/>
+    <label for="name">Dish Name:</label>
+        <input type="text" name="dish[name]" id="name"> 
+    <br/>
+    <label for="name">Dish Image URL:</label>
+        <input type="text" name="dish[image]" id="image"> 
+    <br/>
+    <label>Select a Cook:</label><br>
+        <select  name="dish[cook_id]">
+            <% @cooks.each do |cook| %>
+                <option value="<%=cook.id%>"><%=cook.name%></option> 
+            <% end %>
+        </select>
+    <br/>
+    <label>Select an Expediter:</label>
+    <br/>
+        <select name="dish[expo_id]">
+            <% @expo.each do |expo| %>
+                <option value="<%= expo.id%>"><%=expo.name%></option> 
+            <% end %>
+        </select>
+    <br>
+    <input type="submit" value="Create">
+</form>
+
+<center>
+<footer>
+<hr>
+<h3><a href ="/cooks">See our Cooks</a> | <a href ="/dishes">See our Food</a> | <a href ="/expos">See our Chefs</a> | <a href ="/cooks/new">Come Work For Us</a></h3>
+<hr>
+</footer>
+</center>
